@@ -1,0 +1,20 @@
+{
+  "name": "portfolio.website",
+  "version": "1.0.0",
+  "description": "\"# coffeemug777.github.io\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coffeemug777/coffeemug777.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coffeemug777/coffeemug777.github.io/issues"
+  },
+  "homepage": "https://github.com/coffeemug777/coffeemug777.github.io#readme"
+}
