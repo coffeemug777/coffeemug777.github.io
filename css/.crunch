@@ -1,0 +1,25 @@
+{
+	"compilers": {
+		"less": {
+			"compress": false,
+			"ieCompat": false,
+			"strictMath": false,
+			"strictUnits": false,
+			"javascriptEnabled": false,
+			"sourcemap": true
+		}
+	},
+	"files": {
+		"style.less": {
+			"output": "style.css",
+			"compilers": [
+				"less"
+			],
+			"lastCrunch": "Mon Sep 21 2015 21:02:21 GMT-0400 (Eastern Daylight Time)",
+			"sources": [
+				"dwlib.less",
+				"grid.less"
+			]
+		}
+	}
+}
