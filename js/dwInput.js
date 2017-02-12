@@ -38,10 +38,12 @@ jQuery.noConflict();
 		});		
 
 		$('a').click(function(){
-		    $('html, body').animate({
-		        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top-65
-		    }, 500);
-		    return false;
+			if ($('[name="' + $.attr(this, 'href').substr(1) + '"]')) {
+			    $('html, body').animate({
+			        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top-65
+			    }, 500);
+			    return false;
+			}
 		});		
 	});
 
