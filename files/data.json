@@ -1,0 +1,78 @@
+{
+	"php":[
+		{
+			"title":"Compressor Sizing program",
+		    "imgUrl": "images/portfolio/phpapp/compressorsizing.jpg",
+		    "description": "The program is used as the company's internal tool to determine which compressor is best recommended based on input and data from user against a database."
+		},
+		{
+			"title":"PCB Quoting Online",
+		    "imgUrl": "images/portfolio/phpapp/pcbquote.jpg",
+		    "description": "Enable users to register, create PCB sizing entries, load, edit and delete. In the end the user can get a realtime quote. They can also submit their saved quote directly to the company."
+		},
+		{
+			"title":"Pump Sizing Program",
+		    "imgUrl": "images/portfolio/phpapp/pumpsizing.jpg",
+		    "description": "The company needs a program to automate the creation of recommended upgrades on their Pump Systems. This program does not only that, but email the recommended upgrades and reports in HTML email with pdf attachments. "
+		},
+		{
+			"title":"Pump Systems Builder",
+		    "imgUrl": "images/portfolio/phpapp/pumpsystem.jpg",
+		    "description": "The company needs a program available for their distributor to generate quotes and pump system specs online. It can also save, edit, delete and submit the pump system online. "
+		}
+	],
+
+	"website":[
+		{
+			"url": "http://www.macmachine.com/",
+			"imgUrl": "images/portfolio/small/macmachine.png"
+		},
+		{
+			"url": "http://www.ogontz.com/",
+			"imgUrl": "images/portfolio/small/ogontz.png"
+		},
+		{
+			"url": "http://www.discountabrasives.com/",
+			"imgUrl": "images/portfolio/small/discount-abrasives.png"
+		},
+		{
+			"url": "http://www.americancrane.com/",
+			"imgUrl": "images/portfolio/small/americancrane.png"
+		},
+		{
+			"url": "http://www.cachemspecialties.com/",
+			"imgUrl": "images/portfolio/small/cachem.png"
+		},
+		{
+			"url": "http://leica.imillermicroscopes.com/",
+			"imgUrl": "images/portfolio/small/imiller.png"
+		},
+		{
+			"url": "http://www.hedwin.com/",
+			"imgUrl": "images/portfolio/small/hedwin.png"
+		},
+		{
+			"url": "http://www.abtecinc.com/",
+			"imgUrl": "images/portfolio/small/abtecinc.png"
+		},
+		{
+			"url": "http://www.bassettinc.com/",
+			"imgUrl": "images/portfolio/small/bassett.png"
+		},
+		{
+			"url": "http://www.buckalgonquin.com/",
+			"imgUrl": "images/portfolio/small/buck.png"
+		},
+		{
+			"url": "http://www.mortonmachine.com/",
+			"imgUrl": "images/portfolio/small/mortonmachine.png"
+		},{
+			"url": "http://www.mrspring.com/",
+			"imgUrl": "images/portfolio/small/mrspring.png"
+		},
+		{
+			"url": "http://www.xode.com/",
+			"imgUrl": "images/portfolio/small/xode.png"
+		}
+	]
+}
