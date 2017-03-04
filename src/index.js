@@ -69,7 +69,7 @@ class Nav extends React.Component {
 		return <ul className="nav">
 				<li onClick={() => {this.props.onLiClick('about')}}>About</li>
 				<li onClick={() => {this.props.onLiClick('portfolio')}}>Portfolio</li>
-				<li><a href="files/resume-2015.pdf">Resume</a></li>
+				<li><a href="files/resume.pdf">Resume</a></li>
 				<li><a href="mailto:indocoffee@gmail.com">Contact</a></li>
 			</ul>
 	}
