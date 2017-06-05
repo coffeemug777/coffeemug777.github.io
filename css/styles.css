@@ -8,6 +8,13 @@ body {
   background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%) no-repeat;
   background-attachment: fixed;
 }
+
+#root {
+  width: 90vw;
+  margin: auto;
+  border: 1px solid red;
+}
+
 .nav {
   list-style: none;
   padding: 0;
