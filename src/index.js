@@ -34,17 +34,34 @@ class PortfolioItem extends React.Component {
 // portfolio component/page, render the portfolio HTML, and PortfolioItem component, by passing data (JSON), whether its php, or website.
 // data is retrieved from /files/data.json
 class Portfolio extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			tabIndex: 0
+		}
+	}
+
+	changeTabs(i) {
+		this.setState({
+			tabIndex: i
+		})
+	}
+
 	render () {
-		return 	<div>
+		return 	<div className="portfolio">
 					<h1>Portfolio</h1>
 					<p>Below are some samples of my finished projects.</p>
-					<h2>PHP Web Applications</h2>
-					<p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
-					<PortfolioItem data={data.php} type="php" />
+					<div className="tabItem">
+						<h2>PHP</h2>
+						<p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
+						<PortfolioItem data={data.php} type="php" />
+					</div>
 
-					<h2>Websites</h2>
-					<p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
-					<PortfolioItem data={data.website} type="website" />	            
+					<div className="tabItem">
+						<h2>Websites</h2>
+						<p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
+						<PortfolioItem data={data.website} type="website" />	            
+					</div>
 				</div>
 	}
 }
@@ -52,9 +69,10 @@ class Portfolio extends React.Component {
 // the about component/ page, rendering pure HTML, nothing fancy
 class About extends React.Component {
 	render () {
-		return 	<div>
+		return 	<div className="about-me">
 					<h1>About Me</h1>
-					<p><img src="images/denny.png" className="myImage" />Currently based in Philadelphia, I have over 8 years of experience in Web Development. I build websites from the early stage of designing the mockup to the final phases of the website's deployment.</p>
+					<div className="polaroid"><img src="images/denny.png" className="myImage" /></div>
+					<p>Currently based in Philadelphia, I have over 8 years of experience in Web Development. I build websites from the early stage of designing the mockup to the final phases of the website's deployment.</p>
 					<p>With my programming background I have built customized websites that requires me to code, from simple wordpress templates to using PHP Framework such as CodeIgniter and Laravel.</p>
 					<p>I always keep myself updated with today's web technology, all the while thinking outside the box to create something unique for every project that I'm working on.</p>
 					<p>As a hardworker and team player, I work closely with the client directly and thrive in a team environment.</p>
