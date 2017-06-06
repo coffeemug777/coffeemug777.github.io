@@ -71,7 +71,10 @@ class About extends React.Component {
 	render () {
 		return 	<div className="about-me">
 					<h1>About Me</h1>
-					<div className="polaroid"><img src="images/denny.png" className="myImage" /></div>
+					<div className="polaroid">
+						<img src="images/denny.png" className="myImage" />
+						<p>Prasetyo Denny Wibowo</p>
+					</div>
 					<p>Currently based in Philadelphia, I have over 8 years of experience in Web Development. I build websites from the early stage of designing the mockup to the final phases of the website's deployment.</p>
 					<p>With my programming background I have built customized websites that requires me to code, from simple wordpress templates to using PHP Framework such as CodeIgniter and Laravel.</p>
 					<p>I always keep myself updated with today's web technology, all the while thinking outside the box to create something unique for every project that I'm working on.</p>
