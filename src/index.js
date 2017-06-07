@@ -37,7 +37,11 @@ class Portfolio extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			tabIndex: 0
+			tabIndex: 0, // tab index, php or website
+			websiteIndex: 0, // website index, which item to be shown
+			phpIndex: 0, // php index, which item to be shown
+			phpMax: data.php.length - 1, // phpMax, how many items are in the list
+			websiteMax: data.website.length - 1 // website, how may items are in the list
 		}
 	}
 
@@ -48,19 +52,38 @@ class Portfolio extends React.Component {
 	}
 
 	render () {
+		let tabContent = null;
+		// show wchich content, if tabIndex = 0, then its php, else its website
+		switch(this.state.tabIndex) {
+			case 0:
+				tabContent = 	<div className="tabContent">
+									<p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
+									<PortfolioItem data={data.php[this.state.phpIndex]} type="php" />
+								</div>
+			break;
+
+			case 1:
+				tabContent = 	<div className="tabContent">
+									<p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
+									<PortfolioItem data={data.website[this.state.websiteIndex]} type="website" />	            
+								</div>
+			break;
+			default:
+				break;
 		return 	<div className="portfolio">
 					<h1>Portfolio</h1>
 					<p>Below are some samples of my finished projects.</p>
-					<div className="tabItem">
-						<h2>PHP</h2>
-						<p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
-						<PortfolioItem data={data.php} type="php" />
-					</div>
 
-					<div className="tabItem">
-						<h2>Websites</h2>
-						<p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
-						<PortfolioItem data={data.website} type="website" />	            
+					<div className="tabContainer">
+						<ul className="tabControls">				
+							<li onClick={() => {this.changeTabs(0)}} className={this.state.tabIndex == 1 ? 'not-active':''}>PHP</li>
+							<li onClick={() => {this.changeTabs(1)}} className={this.state.tabIndex == 0 ? 'not-active':''}>Websites</li>
+						</ul>
+
+						{tabContent}
+
+						<span onClick={() => {this.changeIndex('left')}} className="prev fa fa-chevron-circle-left"></span>
+						<span onClick={() => {this.changeIndex('right')}} className="next fa fa-chevron-circle-right"></span>
 					</div>
 				</div>
 	}
