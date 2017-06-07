@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import data from '../files/data.json'
 
-// portfolio component, returns a list of div. Depending on the type, php or website.
+// portfolio component, an item inside a div. Depending on the type, php or website.
 class PortfolioItem extends React.Component {
 	render() {
 		let itemHTML = null 
