@@ -5,29 +5,22 @@ import data from '../files/data.json'
 // portfolio component, returns a list of div. Depending on the type, php or website.
 class PortfolioItem extends React.Component {
 	render() {
-		let itemList = null 
+		let itemHTML = null 
 
-		// iterate the array using map function, and construct a bunch of divs
+		// return php or website item
 		if(this.props.type == 'php'){
-			itemList = this.props.data.map((tItem, i)=>{
-								return 	<div className="listItem" key={"php-" + i}>
-											<h3>{tItem.title}</h3>
-											<img src={tItem.imgUrl} />
-											<p>{tItem.description}</p>
-										</div>
-							})
+			itemHTML = 	<div className="php-item">
+							<h3>{this.props.data.title}</h3>
+							<img src={this.props.data.imgUrl} />
+							<p>{this.props.data.description}</p>
+						</div>
 		} else {
-			itemList = this.props.data.map((tItem, i)=>{
-								return 	<div className="listItem" key={"website-" + i}>
-											<a href={tItem.url}><img src={tItem.imgUrl} /></a>
-										</div>
-							})
+			itemHTML = 	<div className="website-item">
+							<a href={this.props.data.url}><img src={this.props.data.imgUrl} /></a>
+						</div>
 		}
 
-		// return the bunch of divs wrapped with another div for easier handling and styling
-		return	<div className={this.props.type + "-items"}>
-					{itemList}
-				</div>	
+		return itemHTML
 	}
 }
 
