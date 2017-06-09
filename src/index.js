@@ -7,16 +7,27 @@ class PortfolioItem extends React.Component {
 	render() {
 		let itemHTML = null 
 
+		let min = 0
+		let max = 3
+		
+		let index = Math.floor(Math.random() * (max - min + 1)) + min
+		let cssClass = 'polaroid grey rotate-' + index
 		// return php or website item
 		if(this.props.type == 'php'){
 			itemHTML = 	<div className="php-item">
-							<h3>{this.props.data.title}</h3>
-							<img src={this.props.data.imgUrl} />
+							<div className={cssClass}>
+								<img src={this.props.data.imgUrl} />
+								<h3>{this.props.data.title}</h3>
+							</div>
 							<p>{this.props.data.description}</p>
+
 						</div>
 		} else {
 			itemHTML = 	<div className="website-item">
-							<a href={this.props.data.url}><img src={this.props.data.imgUrl} /></a>
+							<div className={cssClass}>
+								<a href={this.props.data.url}><img src={this.props.data.imgUrl} /></a>
+								<h3>{this.props.data.title}</h3>
+							</div>
 						</div>
 		}
 
@@ -123,6 +134,8 @@ class Portfolio extends React.Component {
 			break;
 			default:
 				break;
+		}
+
 		return 	<div className="portfolio">
 					<h1>Portfolio</h1>
 					<p>Below are some samples of my finished projects.</p>
@@ -138,6 +151,7 @@ class Portfolio extends React.Component {
 						<span onClick={() => {this.changeIndex('left')}} className="prev fa fa-chevron-circle-left"></span>
 						<span onClick={() => {this.changeIndex('right')}} className="next fa fa-chevron-circle-right"></span>
 					</div>
+				
 				</div>
 	}
 }
@@ -177,7 +191,8 @@ export default class Home extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			currentPage: 'about'
+//			currentPage: 'about'
+			currentPage: 'portfolio'
 		}
 		// bind the changepage method, for lexical this 
 		this.changePage = this.changePage.bind(this)
