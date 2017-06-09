@@ -25,54 +25,66 @@
 	"website":[
 		{
 			"url": "http://www.macmachine.com/",
-			"imgUrl": "images/portfolio/small/macmachine.png"
+			"imgUrl": "images/portfolio/small/macmachine.png",
+			"title": "Mac Machine"
 		},
 		{
 			"url": "http://www.ogontz.com/",
-			"imgUrl": "images/portfolio/small/ogontz.png"
+			"imgUrl": "images/portfolio/small/ogontz.png",
+			"title": "ogontz"
 		},
 		{
 			"url": "http://www.discountabrasives.com/",
-			"imgUrl": "images/portfolio/small/discount-abrasives.png"
-		},
-		{
-			"url": "http://www.americancrane.com/",
-			"imgUrl": "images/portfolio/small/americancrane.png"
+			"imgUrl": "images/portfolio/small/discount-abrasives.png",
+			"title": "Discount Abrasives"
 		},
 		{
 			"url": "http://www.cachemspecialties.com/",
-			"imgUrl": "images/portfolio/small/cachem.png"
+			"imgUrl": "images/portfolio/small/cachem.png",
+			"title":"California Chemical Specialties",
+			"description":""
 		},
 		{
 			"url": "http://leica.imillermicroscopes.com/",
-			"imgUrl": "images/portfolio/small/imiller.png"
+			"imgUrl": "images/portfolio/small/imiller.png",
+			"title":"I Miller Microscopes, Leica Products Section",
+			"description":""
 		},
 		{
 			"url": "http://www.hedwin.com/",
-			"imgUrl": "images/portfolio/small/hedwin.png"
+			"imgUrl": "images/portfolio/small/hedwin.png",
+			"title":"Zacros America, Hedwin Division",
+			"description":""
 		},
 		{
 			"url": "http://www.abtecinc.com/",
-			"imgUrl": "images/portfolio/small/abtecinc.png"
+			"imgUrl": "images/portfolio/small/abtecinc.png",
+			"title":"Abtec Inc.",
+			"description":""
 		},
 		{
 			"url": "http://www.bassettinc.com/",
-			"imgUrl": "images/portfolio/small/bassett.png"
+			"imgUrl": "images/portfolio/small/bassett.png",
+			"title":"Bassett Industries Inc",
+			"description":""
 		},
 		{
 			"url": "http://www.buckalgonquin.com/",
-			"imgUrl": "images/portfolio/small/buck.png"
+			"imgUrl": "images/portfolio/small/buck.png",
+			"title":"Buck Algonquin",
+			"description":""
 		},
 		{
-			"url": "http://www.mortonmachine.com/",
-			"imgUrl": "images/portfolio/small/mortonmachine.png"
-		},{
 			"url": "http://www.mrspring.com/",
-			"imgUrl": "images/portfolio/small/mrspring.png"
+			"imgUrl": "images/portfolio/small/mrspring.png",
+			"title":"Murphy &amp; Reid Spring",
+			"description":""
 		},
 		{
 			"url": "http://www.xode.com/",
-			"imgUrl": "images/portfolio/small/xode.png"
+			"imgUrl": "images/portfolio/small/xode.png",
+			"title":"XODE",
+			"description":""
 		}
 	]
 }
