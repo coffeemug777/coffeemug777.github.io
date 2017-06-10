@@ -108,17 +108,26 @@ class Portfolio extends React.Component {
 		let tabDesc = <p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
 		let itemData = data.php[this.state.phpIndex]
 		let itemType = 'php'
+		let theIndex = this.state.phpIndex
 
 		if (this.state.tabIndex == 1) {
 			tabDesc = <p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
 			itemData = data.website[this.state.websiteIndex]
 			itemType = 'website'
+			theIndex = this.state.websiteIndex
 		}
 
-		let tabContent =	<div className="tabContent">
+		let tabContent = <div className="tabContent">
 								{tabDesc}
-								<PortfolioItem data={itemData} type={itemType} />
-							</div>
+								<div className="tabContentFixer">
+									<ReactCSSTransitionGroup
+										transitionName="changeitem"
+										transitionEnterTimeout={500}
+										transitionLeaveTimeout={100}>
+										<PortfolioItem data={itemData} type={itemType} key={theIndex} />
+									</ReactCSSTransitionGroup>	
+								</div>
+						</div>
 
 		return 	<div className="portfolio">
 					<h1>Portfolio</h1>
