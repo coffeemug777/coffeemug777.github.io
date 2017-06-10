@@ -115,26 +115,21 @@ class Portfolio extends React.Component {
 
 	render () {
 
-		let tabContent = null;
-
 		// show wchich content, if tabIndex = 0, then its php, else its website
-		switch(this.state.tabIndex) {
-			case 0:
-				tabContent = 	<div className="tabContent">
-									<p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
-									<PortfolioItem data={data.php[this.state.phpIndex]} type="php" />
-								</div>
-			break;
+		let tabDesc = <p>Screenshots of my PHP web applications are listed below. <strong><em>Source code and demo available on request.</em></strong></p>
+		let itemData = data.php[this.state.phpIndex]
+		let itemType = 'php'
 
-			case 1:
-				tabContent = 	<div className="tabContent">
-									<p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
-									<PortfolioItem data={data.website[this.state.websiteIndex]} type="website" />	            
-								</div>
-			break;
-			default:
-				break;
+		if (this.state.tabIndex == 1) {
+			tabDesc = <p>Screenshots of websites I finished are listed below. <strong><em>Click</em></strong> on the images to go to the live websites.</p>
+			itemData = data.website[this.state.websiteIndex]
+			itemType = 'website'
 		}
+
+		let tabContent =	<div className="tabContent">
+								{tabDesc}
+								<PortfolioItem data={itemData} type={itemType} />
+							</div>
 
 		return 	<div className="portfolio">
 					<h1>Portfolio</h1>
