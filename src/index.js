@@ -23,6 +23,7 @@ class PortfolioItem extends React.Component {
 		else 
 			description = <p>{this.props.data.description}</p>
 
+		// change image tag if this is php type, not website type
 		if(this.props.type == 'php')
 			imgTag = <img src={this.props.data.imgUrl} />
 
