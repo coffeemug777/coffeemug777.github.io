@@ -21,6 +21,9 @@ body {
   margin: auto; 
 }
 
+@hoverColor: #4286f4;
+@secondaryColor: #333;
+
 .nav {
 	display: flex;
 	justify-content: center;
@@ -35,7 +38,7 @@ body {
 		color: #999;
 		transition: all .5s;
 		text-decoration: none;
-		border-bottom: 1px dotted rgba(255, 255, 255, 0);
+		border-bottom: 3px solid rgba(255, 255, 255, 0);
 
 		a {
 			color: #999;
@@ -43,21 +46,32 @@ body {
 		}
 
 		&:hover {
-			color: #333;
+			color: @secondaryColor;
 			cursor: pointer;
-			border-bottom: 1px dotted #333;
+			border-bottom: 3px solid @hoverColor;
 
 			a {
-				color: #333;
+				color: @secondaryColor;
 			}	
 		}		
+
+		&.active {
+			color: @secondaryColor;
+			cursor: pointer;
+			border-bottom: 3px solid @secondaryColor;
+
+			a {
+				color: @secondaryColor;
+			}	
+		}
+
 	}
 }
 
 .polaroid {
 	background-color: #fff;
 	float: left;
-	max-width: 240px;
+	max-width: 450px;
 	text-align: center;
 	padding: 15px;
 	margin: 0 30px 30px 0;
@@ -92,7 +106,7 @@ body {
 	}
 }
 
-button {
+a.btn {
 	background-color: #2c3e50;
 	border: 0;
 	border-radius: 5px;
@@ -100,6 +114,12 @@ button {
 	text-transform: uppercase;
 	padding: 10px 20px;
 	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	text-decoration: none;
+	display: inline-block;
+
+	&:hover {
+		background-color: @hoverColor;
+	}
 }
 
 .about-me {
@@ -182,7 +202,7 @@ button {
 
 			&:hover {
 				cursor: pointer;
-				color: #333;
+				color: @hoverColor;
 			}
 		}
 
