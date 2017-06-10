@@ -184,8 +184,8 @@ export default class Home extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-//			currentPage: 'about'
-			currentPage: 'portfolio'
+			currentPage: 'about'
+			//currentPage: 'portfolio'
 		}
 		// bind the changepage method, for lexical this 
 		this.changePage = this.changePage.bind(this)
