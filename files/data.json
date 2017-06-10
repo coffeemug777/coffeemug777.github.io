@@ -24,19 +24,66 @@
 
 	"website":[
 		{
+			"url": "https://drbartlettmd.com/",
+			"imgUrl": "images/portfolio/website/drbartlett.jpg",
+			"title": "Dr. Scott Bartlett",
+			"description":[
+				"Lyquix project: Dr. Scott Bartlett MD requires a website to list all of his surgery procedures. The procedures can also be filtered according to body types.",
+				"The website is powered by wordpress, to enable the client to edit and add any content they want.",
+				"Finished in 2016"
+			]
+		},
+		{
+			"url": "https://www.lyquix.com/",
+			"imgUrl": "images/portfolio/website/lyquix.jpg",
+			"title": "Lyquix",
+			"description":[
+				"Lyquix project: Obviously internal project to showcase what the company can do.",
+				"There is a list of our portfolio, along with every market we represents.",
+				"We also includes blog, which is updated regularly, full of information that we believe is interesting news in the world of website development and design methods.",
+				"The website is powered by Joomla and Flexicontent.",
+				"Finished in 2016"
+			]
+		},
+		{
+			"url": "https://salveoweightmanagement.com/",
+			"imgUrl": "images/portfolio/website/salveo.jpg",
+			"title": "Salveo Weight Management",
+			"description":[
+				"Lyquix project: Salveo Weight Management is a weight loss solution that makes sense. It doesn't have gimmicks, only proven methods.",
+				"The website explains the service provided by the company, and easy to understand information about what works in terms of weight loss.",
+				"Powered by Wordpress, this website is finished in 2016"
+			]
+		},
+		{
+			"url": "https://www.rothmaninstitute.com/",
+			"imgUrl": "images/portfolio/website/rothman.jpg",
+			"title": "Rothman Institute",
+			"description":[
+				"Lyquix project: Rothman Institute speaks for itself as an internationally recognized for excellence in orthopaedic science and technology.",
+				"The website is massive, and has intricate functionalities. We build it so that the information on Rothman Institute's services, physicans, locations, events, news and many more information is laid out in a logical way.",
+				"When we launched it, I really feel that this website is one of my best accomplishment in web developmment",
+				"Finished in 2016"
+			]
+		},
+
+		{
 			"url": "http://www.macmachine.com/",
 			"imgUrl": "images/portfolio/small/macmachine.png",
-			"title": "Mac Machine"
+			"title": "Mac Machine",
+			"description":""
 		},
 		{
 			"url": "http://www.ogontz.com/",
 			"imgUrl": "images/portfolio/small/ogontz.png",
-			"title": "ogontz"
+			"title": "ogontz",
+			"description":""
 		},
 		{
 			"url": "http://www.discountabrasives.com/",
 			"imgUrl": "images/portfolio/small/discount-abrasives.png",
-			"title": "Discount Abrasives"
+			"title": "Discount Abrasives",
+			"description":""
 		},
 		{
 			"url": "http://www.cachemspecialties.com/",
