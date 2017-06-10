@@ -20,7 +20,6 @@ class PortfolioItem extends React.Component {
 		else 
 			description = <p>{this.props.data.description}</p>
 		
-		console.log(description)
 		// return php or website item
 		if(this.props.type == 'php'){
 			itemHTML = 	<div className="php-item">
@@ -151,8 +150,8 @@ class Portfolio extends React.Component {
 
 					<div className="tabContainer">
 						<ul className="tabControls">				
-							<li onClick={() => {this.changeTabs(0)}} className={this.state.tabIndex == 1 ? 'not-active':''}>PHP</li>
-							<li onClick={() => {this.changeTabs(1)}} className={this.state.tabIndex == 0 ? 'not-active':''}>Websites</li>
+							<li onClick={() => {this.changeTabs(1)}} className={this.state.tabIndex == 0 ? 'not-active':''}>Websites with CMS</li>
+							<li onClick={() => {this.changeTabs(0)}} className={this.state.tabIndex == 1 ? 'not-active':''}>PHP custom solutions</li>
 						</ul>
 
 						{tabContent}
@@ -178,7 +177,7 @@ class About extends React.Component {
 					<p>With my programming background I have built customized websites that requires me to code, from simple wordpress templates to using PHP Framework such as CodeIgniter and Laravel.</p>
 					<p>I always keep myself updated with today's web technology, all the while thinking outside the box to create something unique for every project that I'm working on.</p>
 					<p>As a hardworker and team player, I work closely with the client directly and thrive in a team environment.</p>
-					<button className="btn btn-primary" href="mailto:indocoffee@gmail.com">Contact</button>
+					<a className="btn btn-primary" href="mailto:indocoffee@gmail.com">Contact</a>
 				</div>
 	}
 }
@@ -186,9 +185,10 @@ class About extends React.Component {
 // Nav component, just rendering menu items, and handle on click. If about and portfolio, pass on above to Home component, else just an a tag click.
 class Nav extends React.Component {
 	render () {
+		console.log(this.props.currentPage)
 		return <ul className="nav">
-				<li onClick={() => {this.props.onLiClick('about')}}>About</li>
-				<li onClick={() => {this.props.onLiClick('portfolio')}}>Portfolio</li>
+				<li onClick={() => {this.props.onLiClick('about')}} className={this.props.currentPage == 'about'? 'active': ''}>About</li>
+				<li onClick={() => {this.props.onLiClick('portfolio')}} className={this.props.currentPage == 'portfolio'? 'active': ''}>Portfolio</li>
 				<li><a href="files/resume.pdf">Resume</a></li>
 				<li><a href="mailto:indocoffee@gmail.com">Contact</a></li>
 			</ul>
@@ -200,8 +200,8 @@ export default class Home extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-//			currentPage: 'about'
-			currentPage: 'portfolio'
+			currentPage: 'about'
+//			currentPage: 'portfolio'
 		}
 		// bind the changepage method, for lexical this 
 		this.changePage = this.changePage.bind(this)
@@ -227,7 +227,7 @@ export default class Home extends React.Component {
 
 		// pass along the changepage method on the Nav component, so we can change the currentPage state from the ground up
 		return 	<div>
-					<Nav onLiClick={this.changePage} />
+					<Nav onLiClick={this.changePage} currentPage={this.state.currentPage} />
 					{currentPage}
 				</div>
 	}
