@@ -1,5 +1,4 @@
 body {
-  overflow: hidden;
   font-family: 'Sansita', sans-serif;
   background: #e2e2e2;
   margin: 0;
@@ -7,30 +6,31 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%) no-repeat;
   background-attachment: fixed;
+  color: #555;
 }
-
+body h1 {
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
 #root {
-  width: 90vw;
+  width: 75vw;
   margin: auto;
-  border: 1px solid red;
 }
-
 .nav {
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 20px;
 }
 .nav li {
-  display: inline;
   margin: 0 10px;
   padding-bottom: 10px;
   color: #999;
   transition: all .5s;
   text-decoration: none;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 .nav li a {
   color: #999;
@@ -39,10 +39,231 @@ body {
 .nav li:hover {
   color: #333;
   cursor: pointer;
-  border-bottom: 1px dotted #333;
+  border-bottom: 3px solid #4286f4;
 }
 .nav li:hover a {
   color: #333;
+}
+.nav li.active {
+  color: #333;
+  cursor: pointer;
+  border-bottom: 3px solid #333;
+}
+.nav li.active a {
+  color: #333;
+}
+.polaroid {
+  background-color: #fff;
+  float: left;
+  max-width: 450px;
+  text-align: center;
+  padding: 15px;
+  margin: 0 30px 30px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  transform: rotate(2deg);
+}
+.polaroid img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.polaroid p,
+.polaroid h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+}
+.polaroid.grey {
+  background-color: #efefef;
+}
+.polaroid.rotate-0 {
+  transform: rotate(2deg);
+}
+.polaroid.rotate-1 {
+  transform: rotate(-2deg);
+}
+.polaroid.rotate-2 {
+  transform: rotate(-3deg);
+}
+.polaroid.rotate-3 {
+  transform: rotate(3deg);
+}
+a.btn {
+  background-color: #2c3e50;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  display: inline-block;
+}
+a.btn:hover {
+  background-color: #4286f4;
+}
+.page-container {
+  position: relative;
+}
+.about-me {
+  position: absolute;
+}
+.about-me p:first-of-type {
+  padding-top: 40px;
+}
+.portfolio {
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+}
+.portfolio .tabControls {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.portfolio .tabControls li {
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.portfolio .tabControls li:first-child {
+  border-right: 1px solid #eee;
+  border-top-left-radius: 3px;
+}
+.portfolio .tabControls li:nth-child(n+2) {
+  border-top-right-radius: 3px;
+}
+.portfolio .tabControls li:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #ccc, 0 0 1em #eee, 0 0 0.2em #eee;
+}
+.portfolio .tabControls li.not-active {
+  border-bottom: 1px solid #eee;
+  background-color: #efefef;
+}
+.portfolio .tabContent {
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #fff;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 20px 40px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.portfolio .tabContent > p {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 20px;
+}
+.portfolio .tabContent .tabContentFixer {
+  position: absolute;
+  width: calc(100% - 80px);
+  min-height: 400px;
+}
+.portfolio .tabContent .php-item,
+.portfolio .tabContent .website-item {
+  position: absolute;
+  width: 100%;
+}
+.portfolio .tabContent .php-item > p:first-of-type,
+.portfolio .tabContent .website-item > p:first-of-type {
+  padding-top: 40px;
+}
+.portfolio .tabContainer {
+  position: relative;
+}
+.portfolio .tabContainer .prev,
+.portfolio .tabContainer .next {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 0px);
+  font-size: 40px;
+}
+.portfolio .tabContainer .prev:hover,
+.portfolio .tabContainer .next:hover {
+  cursor: pointer;
+  color: #4286f4;
+}
+.portfolio .tabContainer .prev {
+  left: -48px;
+}
+.portfolio .tabContainer .next {
+  right: -52px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #root {
+    width: 80vw;
+  }
+  .portfolio .polaroid img {
+    max-width: 300px;
+  }
+  .portfolio .tabContent .website-item > p:first-of-type {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #root {
+    width: 95vw;
+  }
+  .polaroid {
+    margin: 0 auto;
+    float: none;
+  }
+  .about-me {
+    padding-bottom: 20px;
+  }
+  .about-me p:first-of-type {
+    padding-top: 10px;
+  }
+  .about-me .polaroid {
+    max-width: 356px;
+    box-sizing: border-box;
+  }
+  .portfolio .tabContainer .prev {
+    left: 13px;
+  }
+  .portfolio .tabContainer .next {
+    right: 17px;
+  }
+  .portfolio .tabContent {
+    min-height: 100vh;
+  }
+  .portfolio .tabContent .website-item > p:first-of-type {
+    padding-top: 10px;
+    clear: both;
+  }
+}
+.changepage-enter {
+  opacity: 0.01;
+}
+.changepage-enter.changepage-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.changepage-leave {
+  opacity: 1;
+}
+.changepage-leave.changepage-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.changeitem-enter {
+  opacity: 0.01;
+}
+.changeitem-enter.changeitem-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.changeitem-leave {
+  opacity: 1;
+}
+.changeitem-leave.changeitem-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
 
 /*# sourceMappingURL=styles.css.map*/
