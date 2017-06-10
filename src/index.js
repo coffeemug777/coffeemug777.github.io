@@ -63,54 +63,43 @@ class Portfolio extends React.Component {
 	// change state websiteIndex or phpIndex, on arrow prev/next click
 	changeIndex(dir) {
 		// change state of phpIndex, prev/or next
+		let newindex = 0
 		if(this.state.tabIndex == 0) {
 			if(dir == 'left') {
 				if (this.state.phpIndex > 0)
-					this.setState({
-						phpIndex: this.state.phpIndex - 1
-					});
+					newindex = this.state.phpIndex - 1
 				else
-					this.setState({
-						phpIndex: this.state.phpMax
-					});
-
+					newindex = this.state.phpMax
 			} else {
 				if (this.state.phpIndex < this.state.phpMax )
-					this.setState({
-						phpIndex: this.state.phpIndex + 1
-					});
+					newindex = this.state.phpIndex + 1
 				else
-					this.setState({
-						phpIndex: 0
-					});
+					newindex = 0
 			}
+
+			this.setState({
+				phpIndex: newindex
+			});
 		} 
 
 		// change state of websiteIndex, prev/or next
 		else {
 			if(dir == 'left') {
 				if (this.state.websiteIndex > 0)
-					this.setState({
-						websiteIndex: this.state.websiteIndex - 1
-					});
+					newindex = this.state.websiteIndex - 1
 				else
-					this.setState({
-						websiteIndex: this.state.websiteMax
-					});
-
+					newindex = this.state.websiteMax
 			} else {
 				if (this.state.websiteIndex < this.state.websiteMax )
-					this.setState({
-						websiteIndex: this.state.websiteIndex + 1
-					});
+					newindex = this.state.websiteIndex + 1
 				else
-					this.setState({
-						websiteIndex: 0
-					});
+					newindex = 0
 			}
+
+			this.setState({
+				websiteIndex: newindex
+			});
 		}
-
-
 	}
 
 	render () {
