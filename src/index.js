@@ -207,7 +207,7 @@ export default class Home extends React.Component {
 						<ReactCSSTransitionGroup
 							transitionName="changepage"
 							transitionEnterTimeout={500}
-							transitionLeaveTimeout={0}>
+							transitionLeaveTimeout={200}>
 							{currentPage}
 						</ReactCSSTransitionGroup>					
 					</div>
