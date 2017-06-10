@@ -238,6 +238,14 @@ a.btn {
 	#root {
 		width: 80vw;
 	}
+
+	.portfolio .polaroid img {
+		max-width: 300px;
+	}
+
+	.portfolio .tabContent .website-item > p:first-of-type {
+		padding-top: 10px;
+	}
 }
 
 @media screen and (max-width: 767px) { 
@@ -249,6 +257,19 @@ a.btn {
 		margin: 0 auto;
 		float: none;
 	}
+
+	.about-me {
+		padding-bottom: 20px;
+		p:first-of-type {
+			padding-top:10px;
+		}
+		
+		.polaroid {
+			max-width: 356px;
+			box-sizing: border-box;
+		}
+	}
+
 	.portfolio {
 		.tabContainer {
 			.prev {

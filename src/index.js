@@ -140,7 +140,7 @@ class Portfolio extends React.Component {
 						</ul>
 
 						{tabContent}
-
+	
 						<span onClick={() => {this.changeIndex('left')}} className="prev fa fa-chevron-circle-left"></span>
 						<span onClick={() => {this.changeIndex('right')}} className="next fa fa-chevron-circle-right"></span>
 					</div>
@@ -184,8 +184,8 @@ export default class Home extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			currentPage: 'about'
-//			currentPage: 'portfolio'
+//			currentPage: 'about'
+			currentPage: 'portfolio'
 		}
 		// bind the changepage method, for lexical this 
 		this.changePage = this.changePage.bind(this)

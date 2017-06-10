@@ -41,7 +41,6 @@
 				"Obviously an internal project to showcase what Lyquix can do.",
 				"There is a list of Lyquix's portfolio, along with every market Lyquix represents.",
 				"The website also features a blog, which is updated regularly. The blog entries are full of information on interesting news in the world of website development and design methods.",
-				"The website is powered by Joomla and Flexicontent.",
 				"Finished in August, 2016"
 			]
 		},
@@ -62,7 +61,6 @@
 			"description":[
 				"Rothman Institute speaks for itself as an internationally recognized for excellence in orthopaedic science and technology.",
 				"The website is massive, and has intricate functionalities. We build it so that the information on Rothman Institute's services, physicans, locations, events, news and ambassadors are laid out in a logical way.",
-				"When the website is launched, I really feel that this website is one of my best accomplishment in web developmment",
 				"Finished in early 2016"
 			]
 		},
@@ -146,7 +144,7 @@
 		{
 			"url": "http://www.mrspring.com/",
 			"imgUrl": "images/portfolio/small/mrspring.png",
-			"title":"Murphy &amp; Reid Spring",
+			"title":"Murphy & Reid Spring",
 			"description":["Older project that is powered with Wordpress.",
 				"Integrated with the ThomasNet Catalog/Navigator platform.",
 				"Finished in 2012."
