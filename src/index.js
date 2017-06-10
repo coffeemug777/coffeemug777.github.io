@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import data from '../files/data.json'
 
 // portfolio component, an item inside a div. Depending on the type, php or website.
@@ -11,33 +12,27 @@ class PortfolioItem extends React.Component {
 		let max = 3
 		
 		let index = Math.floor(Math.random() * (max - min + 1)) + min
-		let cssClass = 'polaroid grey rotate-' + index
+		let polaroidClass = 'polaroid grey rotate-' + index
+		let parentClass = (this.props.type == 'php' ? 'php-item' : 'website-item')
 		let description = this.props.data.description
+		let imgTag = <a href={this.props.data.url}><img src={this.props.data.imgUrl} /></a>
+
 		// check if description is an array
-		//console.log(description)
 		if ( Array.isArray(description) ) 
 			description = description.map((descItem, tindex) => <p key={tindex}>{descItem}</p>) 
 		else 
 			description = <p>{this.props.data.description}</p>
-		
-		// return php or website item
-		if(this.props.type == 'php'){
-			itemHTML = 	<div className="php-item">
-							<div className={cssClass}>
-								<img src={this.props.data.imgUrl} />
-								<h3>{this.props.data.title}</h3>
-							</div>
-							{description}
+
+		if(this.props.type == 'php')
+			imgTag = <img src={this.props.data.imgUrl} />
+
+		itemHTML = 	<div className={parentClass}>
+						<div className={polaroidClass}>
+							{imgTag}
+							<h3>{this.props.data.title}</h3>
 						</div>
-		} else {
-			itemHTML = 	<div className="website-item">
-							<div className={cssClass}>
-								<a href={this.props.data.url}><img src={this.props.data.imgUrl} /></a>
-								<h3>{this.props.data.title}</h3>
-							</div>
-							{description}
-						</div>
-		}
+						{description}
+					</div>		
 
 		return itemHTML
 	}
