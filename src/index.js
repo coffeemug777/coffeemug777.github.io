@@ -69,7 +69,6 @@ class Portfolio extends React.Component {
 		// change state of phpIndex, prev/or next
 		if(this.state.tabIndex == 0) {
 			if(dir == 'left') {
-				console.log('left');
 				if (this.state.phpIndex > 0)
 					this.setState({
 						phpIndex: this.state.phpIndex - 1
@@ -80,7 +79,6 @@ class Portfolio extends React.Component {
 					});
 
 			} else {
-				console.log('right');
 				if (this.state.phpIndex < this.state.phpMax )
 					this.setState({
 						phpIndex: this.state.phpIndex + 1
@@ -95,7 +93,6 @@ class Portfolio extends React.Component {
 		// change state of websiteIndex, prev/or next
 		else {
 			if(dir == 'left') {
-				console.log('left');
 				if (this.state.websiteIndex > 0)
 					this.setState({
 						websiteIndex: this.state.websiteIndex - 1
@@ -106,7 +103,6 @@ class Portfolio extends React.Component {
 					});
 
 			} else {
-				console.log('right');
 				if (this.state.websiteIndex < this.state.websiteMax )
 					this.setState({
 						websiteIndex: this.state.websiteIndex + 1
@@ -185,7 +181,6 @@ class About extends React.Component {
 // Nav component, just rendering menu items, and handle on click. If about and portfolio, pass on above to Home component, else just an a tag click.
 class Nav extends React.Component {
 	render () {
-		console.log(this.props.currentPage)
 		return <ul className="nav">
 				<li onClick={() => {this.props.onLiClick('about')}} className={this.props.currentPage == 'about'? 'active': ''}>About</li>
 				<li onClick={() => {this.props.onLiClick('portfolio')}} className={this.props.currentPage == 'portfolio'? 'active': ''}>Portfolio</li>
