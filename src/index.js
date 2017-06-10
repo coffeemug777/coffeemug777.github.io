@@ -217,9 +217,9 @@ export default class Home extends React.Component {
 		let currentPage = null;
 
 		switch(this.state.currentPage) {
-			case 'about':currentPage = <About /> 
+			case 'about':currentPage = <About key="about" /> 
 			break;
-			case 'portfolio':currentPage = <Portfolio /> 
+			case 'portfolio':currentPage = <Portfolio key="portfolio" /> 
 			break;
 			default:
 				break;
@@ -228,7 +228,14 @@ export default class Home extends React.Component {
 		// pass along the changepage method on the Nav component, so we can change the currentPage state from the ground up
 		return 	<div>
 					<Nav onLiClick={this.changePage} currentPage={this.state.currentPage} />
-					{currentPage}
+					<div className="page-container">
+						<ReactCSSTransitionGroup
+							transitionName="changepage"
+							transitionEnterTimeout={500}
+							transitionLeaveTimeout={0}>
+							{currentPage}
+						</ReactCSSTransitionGroup>					
+					</div>
 				</div>
 	}
 }

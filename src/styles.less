@@ -122,14 +122,20 @@ a.btn {
 	}
 }
 
+.page-container {
+	position: relative;
+}
+
 .about-me {
+	position: absolute;
+
 	p:first-of-type {
 		padding-top: 40px;
 	}
 }
 
 .portfolio {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	min-height: 200px;
 
@@ -247,4 +253,23 @@ a.btn {
 			}
 		}
 	}
+}
+
+
+.changepage-enter {
+  opacity: 0.01;
+}
+
+.changepage-enter.changepage-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.changepage-leave {
+  opacity: 1;
+}
+
+.changepage-leave.changepage-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
