@@ -16,5 +16,25 @@
   "bugs": {
     "url": "https://github.com/coffeemug777/coffeemug777.github.io/issues"
   },
-  "homepage": "https://github.com/coffeemug777/coffeemug777.github.io#readme"
+  "homepage": "https://github.com/coffeemug777/coffeemug777.github.io#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.2",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "react-transition-group": "^1.1.3"
+  }
 }

@@ -1,0 +1,154 @@
+{
+	"php":[
+		{
+			"title":"Compressor Sizing program",
+		    "imgUrl": "images/portfolio/phpapp/compressorsizing.jpg",
+		    "description": "The program is used as the company's internal tool to determine which compressor is best recommended based on input and data from user against a database."
+		},
+		{
+			"title":"PCB Quoting Online",
+		    "imgUrl": "images/portfolio/phpapp/pcbquote.jpg",
+		    "description": "Enable users to register, create PCB sizing entries, load, edit and delete. In the end the user can get a realtime quote. They can also submit their saved quote directly to the company."
+		},
+		{
+			"title":"Pump Sizing Program",
+		    "imgUrl": "images/portfolio/phpapp/pumpsizing.jpg",
+		    "description": "The company needs a program to automate the creation of recommended upgrades on their Pump Systems. This program does not only that, but email the recommended upgrades and reports in HTML email with pdf attachments. "
+		},
+		{
+			"title":"Pump Systems Builder",
+		    "imgUrl": "images/portfolio/phpapp/pumpsystem.jpg",
+		    "description": "The company needs a program available for their distributor to generate quotes and pump system specs online. It can also save, edit, delete and submit the pump system online. "
+		}
+	],
+
+	"website":[
+		{
+			"url": "https://drbartlettmd.com/",
+			"imgUrl": "images/portfolio/website/drbartlett.jpg",
+			"title": "Dr. Scott Bartlett",
+			"description":[
+				"Dr. Scott Bartlett MD requires a website to list all of his surgery procedures. The procedures can also be filtered according to body types.",
+				"The website is powered by wordpress, to enable the client to edit and add any content they want themselves.",
+				"Finished in August, 2016"
+			]
+		},
+		{
+			"url": "https://www.lyquix.com/",
+			"imgUrl": "images/portfolio/website/lyquix.jpg",
+			"title": "Lyquix",
+			"description":[
+				"Obviously an internal project to showcase what Lyquix can do.",
+				"There is a list of Lyquix's portfolio, along with every market Lyquix represents.",
+				"The website also features a blog, which is updated regularly. The blog entries are full of information on interesting news in the world of website development and design methods.",
+				"Finished in August, 2016"
+			]
+		},
+		{
+			"url": "https://salveoweightmanagement.com/",
+			"imgUrl": "images/portfolio/website/salveo.jpg",
+			"title": "Salveo Weight Management",
+			"description":[
+				"Salveo Weight Management is a weight loss solution that makes sense. It doesn't have gimmicks, only proven methods.",
+				"The website explains the service provided by the company, and easy to understand information about what works in terms of weight loss.",
+				"Powered by Wordpress, this website is finished in October-ish, 2016"
+			]
+		},
+		{
+			"url": "https://www.rothmaninstitute.com/",
+			"imgUrl": "images/portfolio/website/rothman.jpg",
+			"title": "Rothman Institute",
+			"description":[
+				"Rothman Institute speaks for itself as an internationally recognized for excellence in orthopaedic science and technology.",
+				"The website is massive, and has intricate functionalities. We build it so that the information on Rothman Institute's services, physicans, locations, events, news and ambassadors are laid out in a logical way.",
+				"Finished in early 2016"
+			]
+		},
+
+		{
+			"url": "http://www.macmachine.com/",
+			"imgUrl": "images/portfolio/small/macmachine.png",
+			"title": "Mac Machine",
+			"description":["Wordpress Website for a CNC Machining and Milling Company, Mac Machine Company Inc.",
+				"Finished in July, 2014."]
+		},
+		{
+			"url": "http://www.ogontz.com/",
+			"imgUrl": "images/portfolio/small/ogontz.png",
+			"title": "ogontz",
+			"description":["Wordpress project for a company, specializing in temperature control valves and steam traps.",
+				"The website is integrated with the ThomasNet Catalog/Navigator Solution",
+				"Finished in March, 2015."
+			]
+		},
+		{
+			"url": "http://www.discountabrasives.com/",
+			"imgUrl": "images/portfolio/small/discount-abrasives.png",
+			"title": "Discount Abrasives",
+			"description":["Discount abrasives sells blasting abrasives materials at whole sales prices.",
+				"The website is built inside shopify platform, complete with online shopping capability.",
+				"A custom template based on the client's requirement is designed, coded and applied.",
+				"Finished in January, 2015."
+			]
+		},
+		{
+			"url": "http://www.cachemspecialties.com/",
+			"imgUrl": "images/portfolio/small/cachem.png",
+			"title":"California Chemical Specialties",
+			"description":["The company produces high quality cosmetic products such as polish, gels, powders and cosmetic accessories.",
+				"The website is powered with Joomla platform, as well as wordpress per client's request.",
+				"Joomla is used to display the products landing pages, while wordpress is for their news and blog, integrated with their marketing sytem and strategies.",
+				"Finished in June, 2012."
+			]
+		},
+		{
+			"url": "http://leica.imillermicroscopes.com/",
+			"imgUrl": "images/portfolio/small/imiller.png",
+			"title":"I Miller Microscopes, Leica Products Section",
+			"description":["This website is intended to showcase only one line of the client's products.",
+				"Leica, the manufacturer of the product line required all of their distributors to have a separate website for their line of product only.",
+				"The website is powered by joomla.",
+				"Finished in May, 2013."
+			]
+		},
+		{
+			"url": "http://www.hedwin.com/",
+			"imgUrl": "images/portfolio/small/hedwin.png",
+			"title":"Zacros America, Hedwin Division",
+			"description":["Hedwin produces flexible packaging. The packaging can be collapsed, even stacked and would take a small amount of storage.",
+				"The website is powered by Joomla, and integrated with Thomasnet's Catalog/Navigator Solution.",
+				"Since Hedwin is internationally recognized, some of the website pages features multiple languages in Japanese, French, Portuguese, German and Spanish.",
+				"Finished in January, 2012."
+			]
+		},
+		{
+			"url": "http://www.abtecinc.com/",
+			"imgUrl": "images/portfolio/small/abtecinc.png",
+			"title":"Abtec Inc.",
+			"description":"Older project that is powered with Joomla."
+		},
+		{
+			"url": "http://www.bassettinc.com/",
+			"imgUrl": "images/portfolio/small/bassett.png",
+			"title":"Bassett Industries Inc",
+			"description":["Older project that is powered with Wordpress.",
+				"Finished in 2011."
+			]
+		},
+		{
+			"url": "http://www.buckalgonquin.com/",
+			"imgUrl": "images/portfolio/small/buck.png",
+			"title":"Buck Algonquin",
+			"description":"Older project that is powered with Joomla. Integrated with ThomasNet Catalog/Navigator Platform."
+		},
+		{
+			"url": "http://www.mrspring.com/",
+			"imgUrl": "images/portfolio/small/mrspring.png",
+			"title":"Murphy & Reid Spring",
+			"description":["Older project that is powered with Wordpress.",
+				"Integrated with the ThomasNet Catalog/Navigator platform.",
+				"Finished in 2012."
+			]
+		}
+	]
+}
