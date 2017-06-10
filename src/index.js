@@ -12,6 +12,15 @@ class PortfolioItem extends React.Component {
 		
 		let index = Math.floor(Math.random() * (max - min + 1)) + min
 		let cssClass = 'polaroid grey rotate-' + index
+		let description = this.props.data.description
+		// check if description is an array
+		//console.log(description)
+		if ( Array.isArray(description) ) 
+			description = description.map((descItem, tindex) => <p key={tindex}>{descItem}</p>) 
+		else 
+			description = <p>{this.props.data.description}</p>
+		
+		console.log(description)
 		// return php or website item
 		if(this.props.type == 'php'){
 			itemHTML = 	<div className="php-item">
@@ -19,8 +28,7 @@ class PortfolioItem extends React.Component {
 								<img src={this.props.data.imgUrl} />
 								<h3>{this.props.data.title}</h3>
 							</div>
-							<p>{this.props.data.description}</p>
-
+							{description}
 						</div>
 		} else {
 			itemHTML = 	<div className="website-item">
@@ -28,6 +36,7 @@ class PortfolioItem extends React.Component {
 								<a href={this.props.data.url}><img src={this.props.data.imgUrl} /></a>
 								<h3>{this.props.data.title}</h3>
 							</div>
+							{description}
 						</div>
 		}
 
@@ -41,7 +50,7 @@ class Portfolio extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			tabIndex: 0, // tab index, php or website
+			tabIndex: 1, // tab index, php or website
 			websiteIndex: 0, // website index, which item to be shown
 			phpIndex: 0, // php index, which item to be shown
 			phpMax: data.php.length - 1, // phpMax, how many items are in the list
